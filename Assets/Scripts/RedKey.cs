@@ -1,18 +1,15 @@
-﻿using System.Collections;
+﻿//IMM215 Inventory Assignment Group 1
+//By Chris Brinkley, Micheal Douglas and Owen Engle
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedKey : MonoBehaviour
+public class RedKey : BaseKey
 {
-    // Start is called before the first frame update
-    void Start()
+    override public void Start()
     {
-        
+        keyColor = GetComponent<Renderer>();
+        keyColor.material.color = Color.red; //Changes the key color to Red
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
