@@ -1,18 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class DoorController : MonoBehaviour
+using Apples;
+namespace Apples
 {
-    // Start is called before the first frame update
-    void Start()
+    public class DoorController : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        bool red;
+        bool green;
+        bool yellow;
+        public GameObject door;
+        void Start()
+        {
+            red = true;
+            green = true;
+            yellow = true;
+        }
+
+        void Update()
+        {
+            if (red & green & yellow == true)
+            {
+                door.SetActive(false);
+            }
+        }
+
+        void OnCollisonEnter()
+        {
+            //if 
+        }
     }
 }
