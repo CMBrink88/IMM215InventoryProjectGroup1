@@ -7,28 +7,25 @@ namespace Apples
     public class DoorController : MonoBehaviour
     {
 
-        bool red;
-        bool green;
-        bool yellow;
+        public bool red;
+        public bool green;
+        public bool yellow;
         public GameObject door;
+
         void Start()
         {
             red = true;
             green = true;
             yellow = true;
+            door.SetActive(true);
         }
 
         void Update()
         {
-            if (red & green & yellow == true)
+            if (red & green & yellow == false)
             {
                 door.SetActive(false);
             }
-        }
-
-        void OnCollisonEnter()
-        {
-            //if 
         }
     }
 }

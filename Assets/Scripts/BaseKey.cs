@@ -22,7 +22,8 @@ namespace Apples
             if (collision.gameObject.tag == "Player")
             { //If the player touches the key, it will change the door to unlocked and destroy the key
                 unlockDoor = true;
-                Destroy(key);
+                key.SetActive(false);
+
             }
         }
 
