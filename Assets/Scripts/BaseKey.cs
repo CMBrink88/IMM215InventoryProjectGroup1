@@ -5,27 +5,11 @@ using Apples;
 
 namespace Apples
 {
-    public class BaseKey : MonoBehaviour
+    public class BaseKey : MasterManager
     {
-        public GameObject key;
-        public GameObject door;
-        public bool unlockDoor = false; //False = locked door
-        public Renderer keyColor;
-
-        public virtual void Start()
+        public void Start()
         {
-            keyColor = GetComponent<Renderer>();
-            keyColor.material.color = Color.yellow; //Changes the color of the key to Yellow
+            keyColor.material.color = Color.yellow; //Changes the key color to Green
         }
-        public void OnCollisionEnter2D(Collision2D collision)
-        {
-            if (collision.gameObject.tag == "Player")
-            { //If the player touches the key, it will change the door to unlocked and destroy the key
-                unlockDoor = true;
-                key.SetActive(false);
-
-            }
-        }
-
     }
 }

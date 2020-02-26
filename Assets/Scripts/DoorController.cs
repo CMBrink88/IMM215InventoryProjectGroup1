@@ -4,28 +4,13 @@ using UnityEngine;
 using Apples;
 namespace Apples
 {
-    public class DoorController : MonoBehaviour
+    public class DoorController : MasterManager
     {
+     
 
-        public bool red;
-        public bool green;
-        public bool yellow;
-        public GameObject door;
-
-        void Start()
+        public void Unlock()
         {
-            red = true;
-            green = true;
-            yellow = true;
-            door.SetActive(true);
-        }
-
-        void Update()
-        {
-            if (red & green & yellow == false)
-            {
-                door.SetActive(false);
-            }
+          
         }
     }
 }
