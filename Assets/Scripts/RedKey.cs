@@ -4,11 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Apples;
-public class RedKey : BaseKey
+public class RedKey : MasterManager
 {
-    override public void Start()
+    public void Start()
     {
-        keyColor = GetComponent<Renderer>();
         keyColor.material.color = Color.red; //Changes the key color to Red
     }
 

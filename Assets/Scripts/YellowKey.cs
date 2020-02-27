@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Apples;
-
 namespace Apples
 {
-    public class BaseKey : MasterManager
+    public class YellowKey : MasterManager
     {
         public void Start()
         {
-            keyColor.material.color = Color.yellow; //Changes the key color to Green
+            keyColor.material.color = Color.yellow; //Changes the key color to Red
         }
+
     }
 }

@@ -131,8 +131,8 @@ GameObject:
   m_Component:
   - component: {fileID: 242071324}
   - component: {fileID: 242071323}
-  - component: {fileID: 242071322}
   - component: {fileID: 242071325}
+  - component: {fileID: 242071322}
   m_Layer: 0
   m_Name: Yellow Key
   m_TagString: Untagged
@@ -149,11 +149,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 242071321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ef1854cffd13e941b4ae6c484daf7dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 740587461da5edf4f87136e0e65e14c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 242071321}
-  door: {fileID: 303595340}
+  door: {fileID: 2118473927}
   unlockDoor: 0
   keyColor: {fileID: 0}
 --- !u!212 &242071323
@@ -435,6 +435,53 @@ Transform:
   m_Father: {fileID: 1413970078}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &662931215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662931216}
+  - component: {fileID: 662931217}
+  m_Layer: 0
+  m_Name: MasterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &662931216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662931215}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5741088, y: -1.3342806, z: -0.70263547}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1413970078}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &662931217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662931215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2631d641d6057e4418f72adb092eb38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 0}
+  door: {fileID: 0}
+  unlockDoor: 0
+  keyColor: {fileID: 0}
 --- !u!1 &750105764
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 986039597}
-  door: {fileID: 0}
+  door: {fileID: 1518039199}
   unlockDoor: 0
   keyColor: {fileID: 0}
 --- !u!61 &986039599
@@ -755,7 +802,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!156049354 &1098075104
 Grid:
@@ -834,7 +881,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1384966947
 Transform:
@@ -1853,7 +1900,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1413970078
 Transform:
@@ -1868,6 +1915,7 @@ Transform:
   m_Children:
   - {fileID: 519420032}
   - {fileID: 1098075105}
+  - {fileID: 662931216}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2009,7 +2057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 1801726873}
-  door: {fileID: 0}
+  door: {fileID: 303595340}
   unlockDoor: 0
   keyColor: {fileID: 0}
 --- !u!61 &1801726875
