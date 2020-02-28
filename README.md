@@ -3,7 +3,7 @@ IMM215 Group1 Inventory Project
 
 Chris's Contributions-*Began project, wrote Parent/Child basic script for Keys and created key sprites*
  
-Owen's Contributions- *Added UI elements and created trigger script for end of maze*
+Owen's Contributions- *Added UI elements and created trigger script for end of maze, Created player movement script and designed maze*
  
 Micheal's Contributions- *Revised Key scripts, added door scripts and sprites*
 
